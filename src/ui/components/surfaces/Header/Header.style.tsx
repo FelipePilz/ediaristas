@@ -14,7 +14,6 @@ export const HeaderAppBar = styled(AppBar)`
     ${({ theme }) => theme.breakpoints.down("md")} {
         .MuiToolBar-root {
             display: flex;
-            justify-content: center;
         }
     }
 `;
@@ -24,5 +23,9 @@ export const HeaderLogo = styled("img")`
 
     ${({ theme }) => theme.breakpoints.up("md")} {
         height: 47px;
+    }
+
+    ${({ theme }) => theme.breakpoints.down("md")} {
+        width: 100%;
     }
 `;
